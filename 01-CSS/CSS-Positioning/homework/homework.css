@@ -2,24 +2,27 @@
 Lección 3: Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en este archivo, por lo que si estás tocando cualquier otro
 archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 */
-
 /* Ejercicio 1: Centrar el texto en un span */
-
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+    display: block;
+    text-align: center;
 }
 
-
 /* Ejercicio 2: Posicionar el header */
-
 /* Acá va tu código */
 
-
+#ejercicioDos{
+    display: none;
+}
 
 /* Ejercicio 3: */
-
 /* Acá va tu código */
+#ejercicioTres{
+    position: absolute; /*tambien funciona con abslute*/
+    top: 100px;
+    left:200px;
+}
 
 
 
@@ -27,12 +30,60 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 
+#ejercicioCuatro{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
 
-
+#ejercicioCinco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
 
 /* Ejercicio 6. */
+/*Se aplico en el ejercicio 5
+flex-direction: row-reverse*/
+
+/* Ejercicio 7. */
+#ejercicioSiete{
+        width: 600px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid green;
+        position: relative;
+        background-color: black;
+        display: inline-table;
+        text-align: -webkit-center;
+
+}
+#elementoUno{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    background-color: white;
+    top: 0px;
+    left: 250px;
+    position: inherit;
+}
+#elementoTres{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    background-color: black;
+    color:white;
+    top: 0px;
+    left: 250px;
+    position: inherit;
+}
+.textoElemento{
+    text-align: center;
+}
